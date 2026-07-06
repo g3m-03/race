@@ -30,4 +30,5 @@ stages:
           steps:
           - checkout: self
           - script: |
+              echo "Checked out SHA: $(Build.SourceVersion)"
               echo "using canary: $(mySecret)"
